@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ludo Game - Cross Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <!-- Login Section -->
+  <div class="login" id="loginSection">
+    <h2>Ludo Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <div class="buttons">
+      <button onclick="signup()">Signup</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div class="status" id="loginStatus"></div>
+  </div>
+
+  <!-- Game Section -->
+  <div class="game hidden" id="gameSection">
+    <h2>Ludo Game</h2>
+    
+    <!-- Dice Roll -->
+    <div class="dice-container">
+      <div id="dice" class="dice">🎲</div>
+      <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+    </div>
+
+    <!-- Cross-Shaped Board -->
+    <div class="board" id="board"></div>
+
+    <!-- Game Status -->
+    <div class="status" id="status"></div>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
